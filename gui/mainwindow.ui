@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>lmbdu</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#widget{
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 10px;
+	 border-color: rgb(0,0,0);
+     padding: 6px;
+ }
+QGroupBox {
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 10px;
+	 border-color: rgb(205, 205, 205);
+     padding: 6px;
+ }
+QListView{
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 10px;
+	 border-color: rgb(205, 205, 205);
+     padding: 6px;
+ }</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QListWidget" name="list_log">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>470</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_SVD">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>427</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>СВД</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_PKT">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>377</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ПКТ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Ak_12">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>327</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>АК-12</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Ak_103">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>277</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>АК-103</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_Ak_74">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>227</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>АК-74</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_test_power">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>177</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Дежурный режим</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_on_power">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>127</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рабочий режим</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_adjustment">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>77</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Юстировка</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_exit">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>27</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active/>
+      <inactive/>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="text">
+     <string>Выключение</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_sensors">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>701</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_voltage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>701</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ammunition">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>701</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_mode_voltage">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>90</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <action name="action">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Adjustment</string>
+   </property>
+  </action>
+  <action name="actionStand_by_mode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Stand-by mode</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionOperation_mode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Operation mode</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionBurst_length">
+   <property name="text">
+    <string>Set Burst length</string>
+   </property>
+  </action>
+  <action name="actionAmmunition">
+   <property name="text">
+    <string>Set Ammunition</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Turn off</string>
+   </property>
+  </action>
+  <action name="actionSound_signal">
+   <property name="text">
+    <string>Sound signal</string>
+   </property>
+  </action>
+  <action name="actionAdjustment">
+   <property name="text">
+    <string>Adjustment</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Нормальный режим</string>
+   </property>
+  </action>
+  <action name="actionNormal_mode">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Нормальный режим</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPicture_in_picture">
+   <property name="text">
+    <string>Картинка в картинке</string>
+   </property>
+  </action>
+  <action name="actionSmall_picture_in_picture">
+   <property name="text">
+    <string>Малая картинка в картинке</string>
+   </property>
+  </action>
+  <action name="actionHorizontal_line">
+   <property name="text">
+    <string>Горизонтальное разделение</string>
+   </property>
+  </action>
+  <action name="actionVertical_line">
+   <property name="text">
+    <string>Вертикальное разделение</string>
+   </property>
+  </action>
+  <action name="actionDigital_stabilization">
+   <property name="text">
+    <string>Цифровая стабилизация</string>
+   </property>
+  </action>
+  <action name="actionPID">
+   <property name="text">
+    <string>PID</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action</sender>
+   <signal>changed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

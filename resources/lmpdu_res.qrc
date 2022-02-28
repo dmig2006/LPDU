@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="cross.png">res/images/cross.png</file>
+        <file alias="compass.png">res/images/compass.png</file>
+        <file alias="adunok_ru.qm">res/l10n/adunok_ru.qm</file>
+        <file alias="logo.png">res/images/logo.png</file>
+        <file>res/images/picture_black/target.png</file>
+        <file>res/images/picture_black/ramka.png</file>
+        <file>res/images/picture_black/opt.png</file>
+        <file>res/images/picture_black/cross.png</file>
+        <file>res/images/picture_black/cros.png</file>
+        <file>res/images/picture_black/opt_range.png</file>
+        <file>res/images/picture_white/target.png</file>
+        <file>res/images/picture_white/ramka_uz.png</file>
+        <file>res/images/picture_white/opt_range.png</file>
+        <file>res/images/picture_white/opt.png</file>
+        <file>res/images/picture_white/cross.png</file>
+        <file>res/images/picture_white/cros.png</file>
+        <file>res/images/crossBlack.png</file>
+        <file>res/images/crossGreen.png</file>
+        <file>res/images/crossRed.png</file>
+        <file>res/images/crossWhite.png</file>
+    </qresource>
+</RCC>
